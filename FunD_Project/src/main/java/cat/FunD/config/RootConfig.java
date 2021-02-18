@@ -17,6 +17,10 @@ import com.zaxxer.hikari.HikariDataSource;
 @Configuration
 //@ComponentScan(basePackages= {"cat.FunD.service"})
 //@MapperScan(basePackages= {"cat.FunD.mapper"})
+
+@ComponentScan(basePackages={"cat.FunD.notice.service"})
+@MapperScan(basePackages={"cat.FunD.notice.mapper"})
+
 public class RootConfig {
 
 	 // spring의 context 안에 hikariConfig와 dataSource
