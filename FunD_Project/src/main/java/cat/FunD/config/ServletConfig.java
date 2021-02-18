@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 //@ComponentScan을 이용해서 다른 패키지에 작성된 스프링 객체 인식 가능
 
 @EnableWebMvc
-@ComponentScan(basePackages = { "cat.FunD.controller", "cat.FunD.fundingboard.controller" })
+@ComponentScan(basePackages = { "cat.FunD.controller", "cat.FunD.fundingboard.controller" ,"cat.FunD.notice.controller"})
 public class ServletConfig implements WebMvcConfigurer {
 	@Override
 	public void configureViewResolvers(ViewResolverRegistry registry) {
